@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="basica.css">
+</head>
+<body>
+ 
+  <div class="calc">
+ 
+    <div class="fila-superior">
+      <div class="campo">
+        <div class="cajita"  id="num1" >0</div>
+      </div>
+ 
+      <div class="campo campo-op">
+        <div class="cajita operacion" id="operacion">+</div>
+      </div>
+ 
+      <div class="campo">
+        <div class="cajita" id="num2">0</div>
+      </div>
+ 
+      <div class="campo campo-igual">
+        <label>&nbsp;</label>
+        <div class="cajita signo-igual">=</div>
+      </div>
+ 
+      <div class="campo">
+        <div class="cajita resultado" id="resultado">________</div>
+      </div>
+    </div>
+ 
+    <div class="botones">
+      <button class="btn borrar" onclick="limpiar()">C</button>
+      <button class="btn borrar" onclick="borrarUltimo()">←</button>
+      <button class="btn op" onclick="seleccionarOp('%')">%</button>
+      <button class="btn op" onclick="seleccionarOp('/')">÷</button>
+ 
+      <button class="btn" onclick="presionarNum('7')">7</button>
+      <button class="btn" onclick="presionarNum('8')">8</button>
+      <button class="btn" onclick="presionarNum('9')">9</button>
+      <button class="btn op" onclick="seleccionarOp('*')">×</button>
+ 
+      <button class="btn" onclick="presionarNum('4')">4</button>
+      <button class="btn" onclick="presionarNum('5')">5</button>
+      <button class="btn" onclick="presionarNum('6')">6</button>
+      <button class="btn op" onclick="seleccionarOp('-')">−</button>
+ 
+      <button class="btn" onclick="presionarNum('1')">1</button>
+      <button class="btn" onclick="presionarNum('2')">2</button>
+      <button class="btn" onclick="presionarNum('3')">3</button>
+      <button class="btn op" onclick="seleccionarOp('+')">+</button>
+ 
+      <button class="btn cero" onclick="presionarNum('0')">0</button>
+      <button class="btn" onclick="presionarPunto()">.</button>
+      <button class="btn igual" onclick="calcular()">=</button>
+    </div>
+  </div>
+ 
+  <script src="basica.js"></script>
+</body>
+</html>
+ 
